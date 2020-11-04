@@ -1,7 +1,7 @@
 import Head from 'next/head'
 import styles from '../styles/Home.module.css'
 
-// import data from '../data/data.json'
+import data from '../data/data.json'
 
 export default function Home() {
   return (
