@@ -16,9 +16,6 @@ collections:
         label: "first"
         file: "data/data.json"
         fields: # The fields for each document, usually in front matter
-          - name: "first"
-            label: "First"
-            default: "lalalala"
             widget: list
             add_to_top: true
             fields:
