@@ -5,20 +5,20 @@ backend:
 media_folder: "images/uploads" # Media files will be stored in the repo under images/uploads
 
 collections:
-  # - name: "testing"
-  #   label: "Testing"
+  - name: "testing"
+    label: "Testing"
     folder: "data/"
     create: true 
     extension: "json"
     slug: "data"
-    fields: 
-      - name: "first"
-        label: "First"
-        widget: list
-        add_to_top: true
-        fields:
-          - {label: Title, name: title, widget: string}
-          - {label: Description, name: description, widget: string}
+    widget: list
+    add_to_top: true
+    fields:
+      - {label: Title, name: title, widget: string}
+      - {label: Description, name: description, widget: string}
+    # fields: 
+    #   - name: "first"
+    #     label: "First"
       # - {label: "Title", name: "title", widget: "string"}
       # - {label: "Description", name: "description", widget: "string"}
       # - {label: "Featured Image", name: "thumbnail", widget: "image"}
