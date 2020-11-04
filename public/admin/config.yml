@@ -12,7 +12,11 @@ collections:
     extension: "json"
     slug: "data"
     fields: # The fields for each document, usually in front matter
+      - name: "first"
+        label: "First"
         widget: list
+        add_to_top: true
+        collapsed: false
         fields:
           - {label: Title, name: title, widget: string}
           - {label: Description, name: description, widget: string}
