@@ -11,15 +11,19 @@ collections:
     create: true # Allow users to create new documents in this collection
     extension: "json"
     slug: "data"
-    fields: # The fields for each document, usually in front matter
+    files:
       - name: "first"
-        label: "First"
-        default: "lalalala"
-        widget: list
-        add_to_top: true
-        fields:
-          - {label: Title, name: title, widget: string}
-          - {label: Description, name: description, widget: string}
+        label: "first"
+        file: "data/data.json"
+        fields: # The fields for each document, usually in front matter
+          - name: "first"
+            label: "First"
+            default: "lalalala"
+            widget: list
+            add_to_top: true
+            fields:
+              - {label: Title, name: title, widget: string}
+              - {label: Description, name: description, widget: string}
       # - {label: "Title", name: "title", widget: "string"}
       # - {label: "Description", name: "description", widget: "string"}
       # - {label: "Featured Image", name: "thumbnail", widget: "image"}
