@@ -7,7 +7,7 @@ export default function Home() {
   return (
     <div className={styles.container}>
       <ul>
-        {data.map(x => (
+        {data.first.map(x => (
           <li>{x.title} | {x.description}</li>
         ))}
       </ul>
