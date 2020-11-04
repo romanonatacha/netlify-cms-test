@@ -7,18 +7,18 @@ media_folder: "images/uploads" # Media files will be stored in the repo under im
 collections:
   - name: "testing"
     label: "Testing"
-    folder: "data/"
-    create: true 
-    extension: "json"
-    slug: "data"
-    widget: list
-    add_to_top: true
-    fields:
-      - {label: Title, name: title, widget: string}
-      - {label: Description, name: description, widget: string}
-    # fields: 
-    #   - name: "first"
-    #     label: "First"
+    files:
+      - name: data
+        label: Data
+        file: data/data.json
+        fields: 
+          - name: "list test"
+            label: "List test"
+            widget: list
+            add_to_top: true
+            fields:
+              - {label: Title, name: title, widget: string}
+              - {label: Description, name: description, widget: string}
       # - {label: "Title", name: "title", widget: "string"}
       # - {label: "Description", name: "description", widget: "string"}
       # - {label: "Featured Image", name: "thumbnail", widget: "image"}
