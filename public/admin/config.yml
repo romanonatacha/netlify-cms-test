@@ -11,9 +11,10 @@ collections:
     create: true # Allow users to create new documents in this collection
     extension: "json"
     slug: "data"
-    field: # The fields for each document, usually in front matter
+    fields: # The fields for each document, usually in front matter
       - name: "first"
         label: "First"
+        default: "lalalala"
         widget: list
         add_to_top: true
         fields:
