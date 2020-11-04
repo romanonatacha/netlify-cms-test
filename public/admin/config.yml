@@ -12,9 +12,6 @@ collections:
     extension: "json"
     slug: "data"
     fields: # The fields for each document, usually in front matter
-      - name: "first"
-        label: "First"
-        summary: "first"
         widget: list
         fields:
           - {label: Title, name: title, widget: string}
