@@ -5,13 +5,13 @@ backend:
 media_folder: "images/uploads" # Media files will be stored in the repo under images/uploads
 
 collections:
-  - name: "testing" # Used in routes, e.g., /admin/collections/blog
-    label: "Testing" # Used in the UI
-    folder: "data/" # The path to the folder where the documents are stored
-    create: true # Allow users to create new documents in this collection
+  # - name: "testing"
+  #   label: "Testing"
+    folder: "data/"
+    create: true 
     extension: "json"
     slug: "data"
-    fields: # The fields for each document, usually in front matter
+    fields: 
       - name: "first"
         label: "First"
         widget: list
