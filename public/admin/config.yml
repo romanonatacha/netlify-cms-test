@@ -14,9 +14,10 @@ collections:
     fields: # The fields for each document, usually in front matter
       - name: "first"
         label: "First"
+        label_singular: "lalalalal"
         widget: list
         add_to_top: true
-        collapsed: false
+        minimize_collapsed: false
         fields:
           - {label: Title, name: title, widget: string}
           - {label: Description, name: description, widget: string}
