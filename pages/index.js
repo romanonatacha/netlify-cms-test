@@ -6,11 +6,11 @@ import styles from '../styles/Home.module.css'
 export default function Home() {
   return (
     <div className={styles.container}>
-      {/* <ul>
+      <ul>
         {data.first.map(x => (
           <li>{x.title} | {x.description}</li>
         ))}
-      </ul> */}
+      </ul>
     </div>
   )
 }

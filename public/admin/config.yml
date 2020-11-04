@@ -11,7 +11,6 @@ collections:
     create: true # Allow users to create new documents in this collection
     extension: "json"
     slug: "data"
-    field: "test"
     fields: # The fields for each document, usually in front matter
       - name: "first"
         label: "First"
