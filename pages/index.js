@@ -6,9 +6,11 @@ import data from '../data/data.json'
 export default function Home() {
   return (
     <div className={styles.container}>
-      {data.title}
-      <br></br>
-      {data.description}
+      <ul>
+        {data.map(x => (
+          <li>{x.title} | {x.description}</li>
+        ))}
+      </ul>
     </div>
   )
 }
